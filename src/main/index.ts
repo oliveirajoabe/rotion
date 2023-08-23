@@ -9,8 +9,14 @@ function createWindow(): void {
     height: 700,
     show: false,
     backgroundColor: '#17141f',
+    // titleBarStyle: process.platform === 'darwin' ? 'hiddenInset' : 'hidden',
     titleBarStyle: 'hiddenInset',
     trafficLightPosition: { x: 20, y: 20 },
+    // titleBarOverlay: {
+    //   color: '#17141f',
+    //   symbolColor: '#c1bfc7',
+    //   height: 30,
+    // },
     autoHideMenuBar: true,
     ...(process.platform === 'linux'
       ? { icon: path.join('../../build/icon.png') }

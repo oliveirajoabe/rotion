@@ -21,6 +21,20 @@ export const theme = {
         900: '#17141f',
       },
     },
+    keyframes: {
+      slideIn: {
+        from: { width: 0 },
+        to: { width: 'var(--radix-collapsible-content-width)' },
+      },
+      slideOut: {
+        from: { width: 'var(--radix-collapsible-content-width)' },
+        to: { width: 0 },
+      },
+    },
+    animation: {
+      slideIn: 'slideIn 0.25s',
+      slideOut: 'slideOut 0.25s',
+    },
   },
 }
 export const plugins = [
